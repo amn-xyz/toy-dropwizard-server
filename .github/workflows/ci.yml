@@ -1,0 +1,16 @@
+name: continuous integration example
+
+on:
+  push:
+    branches:
+      main
+
+jobs:
+  build-and-test-please:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Install Java
+      
